@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { memo } from "react";
 import Todo from "./Todo";
 
 const TodoList = ({
@@ -95,4 +95,4 @@ const TodoList = ({
   );
 };
 
-export default TodoList;
+export default memo(TodoList);

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, memo } from "react";
 import "./Todo.scss";
 const Todo = ({ todo, onCheckBtnClick, deleteTodo, setTodoList, todoList }) => {
   const [isEdit, setIsEdit] = useState(false);
@@ -128,4 +128,4 @@ const Todo = ({ todo, onCheckBtnClick, deleteTodo, setTodoList, todoList }) => {
     </>
   );
 };
-export default Todo;
+export default memo(Todo);
